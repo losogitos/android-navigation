@@ -51,8 +51,8 @@ public class DeepLinkFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         TextView tv = view.findViewById(R.id.text);
         tv.setText(getArguments().getString("myarg"));
-        TextView tv2 = view.findViewById(R.id.text2);
-        tv2.setText(getArguments().getString("myarg2"));
+//        TextView tv2 = view.findViewById(R.id.text2);
+//        tv2.setText(getArguments().getString("myarg2"));
 
         Button b = view.findViewById(R.id.send_notification);
         b.setOnClickListener(new View.OnClickListener() {

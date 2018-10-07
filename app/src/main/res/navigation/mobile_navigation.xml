@@ -90,13 +90,15 @@
             android:name="myarg"
             android:defaultValue="Android!"/>
 
-        <argument
-            android:name="myarg2"
-            android:defaultValue="Android arg 2"/>
-        <!-- TODO STEP 12 - Add a deep link to www.iana.org/domains/{myarg}/ -->
+		<deepLink app:uri="www.example.com/{myarg}" />
 
-        <deepLink app:uri="www.example.com/{myarg}/{myarg2}" />
-        <deepLink app:uri="www.example.com/{myarg}" />
+		<!--        <argument
+					android:name="myarg2"
+					android:defaultValue="Android arg 2"/>-->
+		<!-- TODO STEP 12 - Add a deep link to www.iana.org/domains/{myarg}/ -->
+
+		<!--<deepLink app:uri="www.example.com/{myarg}/{myarg2}" />-->
+
 
         <!-- TODO END STEP 12 -->
     </fragment>
