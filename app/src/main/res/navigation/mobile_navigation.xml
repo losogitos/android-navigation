@@ -21,7 +21,6 @@
         android:label="@string/home"
         tools:layout="@layout/main_fragment">
 
-        <!-- TODO STEP 8 - Add action with transitions -->
         <action
             android:id="@+id/next_action"
             app:destination="@+id/flow_step_one"
@@ -29,6 +28,9 @@
             app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_launcher_home_to_settings_fragment"
+            app:destination="@id/settings_fragment" />
 
         <!-- TODO ENDSTEP -->
 
@@ -65,13 +67,18 @@
         </action>
     </fragment>
 
-    <!-- TODO STEP 4 Create a new navigation destination pointing to SettingsFragment -->
+
     <fragment
         android:id="@+id/settings_fragment"
         android:name="com.example.android.codelabs.navigation.SettingsFragment"
         android:label="fragment_settings"
-        tools:layout="@layout/fragment_settings"/>
-    <!-- TODO END STEP 4 -->
+        tools:layout="@layout/fragment_settings">
+        <argument
+            android:name="param1"
+            android:defaultValue="testValue"
+            app:type="string" />
+    </fragment>
+
 
     <fragment
         android:id="@+id/android"

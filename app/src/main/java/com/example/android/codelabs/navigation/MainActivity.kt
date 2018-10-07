@@ -84,7 +84,6 @@ class MainActivity : AppCompatActivity() {
 
     private fun setupActionBar(navController: NavController) {
         drawerLayout = findViewById(R.id.drawer_layout)
-
         NavigationUI.setupActionBarWithNavController(this, navController, drawerLayout)
     }
 
